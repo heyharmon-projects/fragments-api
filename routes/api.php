@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use DDD\Http\Fragment\Controllers\FragmentController;
+use Fragment\Controllers\FragmentController;
 
 /*
 |--------------------------------------------------------------------------

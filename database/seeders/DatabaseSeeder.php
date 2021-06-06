@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+use DDD\Domain\Fragment\Fragment;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -13,6 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \DDD\Domain\Users\User::factory(1)->create();
+        Fragment::factory()
+            ->count(50)
+            ->create();
     }
 }

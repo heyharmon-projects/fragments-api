@@ -2,8 +2,9 @@
 
 namespace Database\Factories\Domain\Fragment;
 
-use DDD\Domain\Fragment\Fragment;
 use Illuminate\Database\Eloquent\Factories\Factory;
+
+use DDD\Domain\Fragment\Fragment;
 
 class FragmentFactory extends Factory
 {
@@ -22,8 +23,8 @@ class FragmentFactory extends Factory
     public function definition()
     {
         return [
-            'url' => $this->faker->url,
             'title' => $this->faker->name,
+            'url' => $this->faker->url,
             'body' => $this->faker->text
         ];
     }

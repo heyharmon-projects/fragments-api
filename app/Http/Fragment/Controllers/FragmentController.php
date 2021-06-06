@@ -2,6 +2,7 @@
 
 namespace DDD\Http\Fragment\Controllers;
 
+use DDD\App\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use DDD\Domain\Fragment\Fragment;
