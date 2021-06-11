@@ -15,8 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Fragment::factory()
-            ->count(50)
-            ->create();
+        // Fragment::factory()
+        //     ->count(50)
+        //     ->create();
     }
 }
