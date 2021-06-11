@@ -13,9 +13,20 @@ class FragmentController extends Controller
      * Display a listing of the resource.
      *
      */
-    public function index()
+    public function index(Request $request)
     {
         return Fragment::all();
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     */
+    public function store(Request $request)
+    {
+        return Fragment::create(
+            $request->all()
+        );
     }
 
     /**
@@ -31,11 +42,13 @@ class FragmentController extends Controller
      * Update the specified resource in storage.
      *
      */
-    public function update(Fragment $fragment, $request)
+    public function update(Fragment $fragment, Request $request)
     {
-        return $block->update(
-            $request
+        $fragment->update(
+            $request->all()
         );
+
+        return $fragment;
     }
 
     /**
